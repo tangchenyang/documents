@@ -1,0 +1,19 @@
+# Software
+- Google Chrome
+- 微信
+- 企业微信
+- IntelliJ IDEA
+- PyCharm
+- DataGrip
+- Item2
+- brew
+- Java 1.8
+- Scala 2.11
+- Python 3
+- WPS
+- MS Teams
+- Slacks
+- Git
+- Maven
+- docker
+- PicGo 图床

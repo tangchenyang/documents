@@ -11,7 +11,7 @@ ALTER DATABASE airflow OWNER TO airflow;
 GRANT ALL PRIVILEGES ON DATABASE airflow to airflow;
 CREATE DATABASE airflow_ctl;
 ```
-
+![xxx](https://raw.githubusercontent.com/tangchenyang/images/master/img20220307172028.png)
 ## 创建 control_tbl 表
 
 用 airflow 用户登录 airflow_ctl 数据库, 执行一下SQL语句
@@ -122,10 +122,11 @@ airflow initdb
 
 ### 启动airflow
 ```shell
+cd ~/Software/airflow-1.10.13 && . bin/activate 
 # 启动 scheduler 
-cd ~/Software/airflow-1.10.13 && . bin/activate && source .env && airflow scheduler 
+source .env && airflow scheduler 
 # 启动 webserver 
-cd ~/Software/airflow-1.10.13 && . bin/activate && source .env && airflow webserver 
+source .env && airflow webserver 
 ```
 
 ### copy 项目中的dags
