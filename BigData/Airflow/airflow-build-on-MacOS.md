@@ -70,8 +70,8 @@ pip install virtualenv
 
 ## 为 Airflow 创建虚拟 Python 环境
 ```shell
-mkdir ~/Software/airflow-1.10.13
-virtualenv --python=3.7 ~/Software/airflow-1.10.13
+mkdir -p ~/Software/airflow-1.10.13
+virtualenv --python=3.8 ~/Software/airflow-1.10.13
 ```
 
 ## 安装 Airflow
@@ -103,7 +103,7 @@ pip install -r requirements.txt
 ### 创建 .env
 ```shell
 cat > .env <<EOF
-export AIRFLOW_HOME=/Users/chenyangtang-fox/airflow
+export AIRFLOW_HOME=$HOME/airflow
 EOF
 ```
 
@@ -144,6 +144,11 @@ rm -rf ~/Software/airflow-1.10.13
 ```
     
 
-    
+## 修改配置 
+- sql_alchemy_conn = postgresql://airflow:airflow@localhost/airflow
+- hostname_callable = socket:gethostname
+- executor = LocalExecutor
+- workers = 4
+
 
     
